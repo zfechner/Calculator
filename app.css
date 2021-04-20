@@ -1,0 +1,67 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    width: 20%;
+    margin: auto;
+}    
+
+#calculator {
+    /* border: 0.2px solid; */
+    border-radius: 0.2em;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;  
+}
+
+#calculatorDisplay {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    text-align: right;
+    padding: 1rem 1.5rem;
+    /* width: 20rem; */
+}
+
+#calculatorKeys {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas:
+      "CE C bs divide"
+      "seven eight nine times"
+      "four five six minus"
+      "one two three plus"
+      "signChange zero dot equal";
+}
+
+#calculatorKeys > button {
+    border: 0;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+  
+.number:hover, .operator:hover {
+    background-color: #E0DEDE;
+}
+
+.operator {
+    background-color: #C4C4C4;
+}
+
+.equals {
+    background-color: #FF902E;
+}
+
+.equals:hover {
+    background-color: #AF5200;
+}
+
+
+
