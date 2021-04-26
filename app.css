@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: linear-gradient(#e66465, #9198e5);
 }
 
 #container {
@@ -30,11 +31,12 @@ body {
 }
 
 #calculatorKeys {
+    background-color: #e4e4e4;
     display: grid;
     grid-gap: 1px;
     grid-template-columns: repeat(4, auto);
     grid-template-areas:
-      "CE C bs divide"
+      "CE C clear divide"
       "seven eight nine times"
       "four five six minus"
       "one two three plus"
@@ -47,16 +49,17 @@ body {
     font-size: 1rem;
 }
   
-.number:hover, .operator:hover {
+[data-type='number']:hover, [data-type='operator']:hover {
     background-color: #E0DEDE;
 }
 
-.operator {
+[data-type='operator'] {
     background-color: #C4C4C4;
 }
 
 .equals {
     background-color: #FF902E;
+    grid-area: equal;
 }
 
 .equals:hover {
@@ -64,4 +67,79 @@ body {
 }
 
 
+.one {
+    grid-area: one;
+}
 
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+
+.dot {
+    grid-area: dot;
+}
+
+.backspace {
+    grid-area: clear;
+}
+
+.CE {
+    grid-area: CE;
+}
+
+.C {
+    grid-area: C;
+}
+
+.signChange {
+    grid-area: signChange;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.multiply {
+    grid-area: times;
+}
+
+.divide {
+    grid-area: divide;
+}

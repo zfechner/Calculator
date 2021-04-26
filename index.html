@@ -20,30 +20,31 @@
         <div id="calculator">
             <div id="calculatorDisplay">0</div>
             <div id="calculatorKeys">
-                <button class="operator CE">CE</button>
-                <button class="operator C">C</button>
-                <button class="operator backspace"><i class="fas fa-backspace"></i></button>
-                <button class="operator divide">÷</button>
+                <button class="CE" data-type='operator' data-action='ce'>CE</button>
+                <button class="C" data-type='operator' data-action='clear'>C</button>
+                <button class="backspace" data-type='operator' data-action='backspace'><i
+                        class="fas fa-backspace"></i></button>
+                <button class="divide" data-type='operator' data-action='divide'>÷</button>
 
-                <button class="number seven">7</button>
-                <button class="number eight">8</button>
-                <button class="number nine">9</button>
-                <button class="operator times">&times;</button>
+                <button class="seven" data-type='number'>7</button>
+                <button class="eight" data-type='number'>8</button>
+                <button class="nine" data-type='number'>9</button>
+                <button class="multiply" data-type='operator' data-action='multiply'>&times;</button>
 
-                <button class="number four">4</button>
-                <button class="number five">5</button>
-                <button class="number six">6</button>
-                <button class="operator minus">-</button>
+                <button class="four" data-type='number'>4</button>
+                <button class="five" data-type='number'>5</button>
+                <button class="six" data-type='number'>6</button>
+                <button class="minus" data-type='operator' data-action='minus'>-</button>
 
-                <button class="number one">1</button>
-                <button class="number two">2</button>
-                <button class="number three">3</button>
-                <button class="operator plus">+</button>
+                <button class="one" data-type='number'>1</button>
+                <button class="two" data-type='number'>2</button>
+                <button class="three" data-type='number'>3</button>
+                <button class="plus" data-type='operator' data-action='plus'>+</button>
 
-                <button class="number signChange">+/-</button>
-                <button class="number zero">0</button>
-                <button class="number dot">.</button>
-                <button class="equals">=</button>
+                <button class="signChange" data-type='number' data-action='signChange'>+/-</button>
+                <button class="zero" data-type='number'>0</button>
+                <button class="dot" data-type='number' data-action='decimal'>.</button>
+                <button class="equals" data-type="equal">=</button>
 
             </div>
         </div>
